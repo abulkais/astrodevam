@@ -1,38 +1,1267 @@
-.App {
+aside {
+  width: 100%;
+  top: 0px;
+  max-height: 100%;
+  height: auto;
+  position: sticky !important;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #1a262b;
+  padding: 20px 10px;
+}
+
+
+.aside_card_img {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.aside_card_img img {
+  width: 100px;
+  max-width: 100%;
+  display: inline-block;
+  max-height: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.aside_inner_section {
+  margin-top: 10px;
+  display: grid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.aside_inner_section a {
+  text-transform: capitalize;
+  font-weight: 600;
+  text-align: start;
+  padding: 10px;
+  color: #fff;
+  border-bottom: 1px solid gray;
+}
+
+.aside_inner_section a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.aside_inner_section a:active {
+  /* padding: 10px 0px ; */
+  background-color: palevioletred;
+
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  display: flex !important;
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+  background-color: whitesmoke;
+}
+
+.logo {
+  align-items: center;
   display: flex;
+}
+
+.logo img {
+  width: 5rem;
+  height: auto;
+}
+
+.logo h4 {
+  font-size: 35px;
+  color: #000;
+}
+
+
+.astrologer_details_box {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 15px 8px;
+
+
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 0 10px #ccc;
+  border-radius: 10px;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.astrologer_details_box_left {
+  gap: 10px;
+  width: 75%;
+  display: flex;
+}
+
+/* .astrologer_details_box_left {
+  display: flex;
+  width: 75%;
+} */
+
+.astrologer_details_box .asrologer_img {
+  display: grid;
+}
+
+.astrologer_details_box .asrologer_img img {
+  border-radius: 50%;
+  height: auto;
+  width: 70px;
+  max-width: 100%;
+}
+
+.asrologer_img span i {
+  font-size: 14px;
+  gap: 10px;
+  color: orange;
+}
+
+.asrologer_img p {
+  margin-bottom: 0px;
+}
+
+.astrologer_bio {
+  display: grid;
+}
+
+.astrologer_bio h6 {
+  font-size: 14px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  color: #000;
+}
+
+.astrologer_bio span {
+  font-size: 14px;
+}
+
+.astrologer_bio span b {
+  color: #c10101;
+}
+
+.astrologer_btn {
+  display: inline;
+
+}
+
+.astrologer_btn img {
+  margin: 0 auto;
+  display: block;
+  height: auto;
+  max-width: 20px;
+  width: 100%;
+
+}
+
+.astrologer_btn button {
   flex-direction: column;
+  justify-content: space-between;
+  margin-top: 20px;
+  height: auto;
+  width: 100%;
+  padding: 5px 20px;
+  color: #13853a;
+  border: 1px solid #13853a;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+section article {
+  margin: 20px 0px;
+}
+
+section article .col-12 {
+  margin-bottom: 30px;
+}
+
+.astrologer_btn p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 13px;
+}
+
+.asrologer_img p {
+  font-size: 14px;
+}
+
+.chat-with-astrologer {
+  background-color: #f0df35;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 8px;
+
+}
+
+.astrologer_upper_sec {
+  margin: 20px 0px;
+}
+
+.astrologer_upper_sec .recharge {
+  color: #13853a;
+  border: 1px solid #13853a;
+  border-radius: 5px;
+  padding: 7px 18px;
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+
+/* dashboard section */
+.dashboard_upper_sec {
+  padding: 20px 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background-color: #000;
+}
+
+.dashboard_upper_box {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 15px 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dashboard_upper_box img {
+  margin: auto;
+  text-align: center;
+  display: block;
+  align-items: center;
+  height: auto;
+  width: 75px;
+}
+
+.dashboard_upper_box p {
+  color: #000;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+}
+
+.dashboard_upper_box a:hover {
+  text-decoration: none;
+}
+
+.our_astrologer {
+  padding: 30px 20px;
+  background: #f0df20;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0px;
+}
+
+
+.our_astrologer h3 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.our_astrologer p {
+  /* margin: 0px; */
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.our_astrologer .col-md-4 {
+  margin-bottom: 25px;
+}
+
+.our_astrologer_box {
+  border: 10px solid #f4f4f4;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
+.our_astrologer_box_img {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 10px solid #fff;
+  background-image: url(https://aws.astrotalk.com/assets/images/astro-background-gray.webp);
+  background-repeat: round;
+  border-radius: 100%;
+  transition: all .5s;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+
+.our_astrologer_box_img img {
+  width: 100%;
+  height: auto;
+}
+
+.our_astrologer_box_img:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.astrologer_name {
+  margin: 4px 0 5px;
+  font-weight: 600;
+  color: #454545;
+  letter-spacing: .01rem;
+  font-size: 19px;
+}
+
+.astrologer_profession {
+  margin-bottom: 10px;
+  color: #616161;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+/* call history */
+.call_history_sec {
+  margin: 20px 0px;
+}
+
+.call_history_sec h1 {
+  margin: auto;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #313131;
+  text-transform: uppercase;
+  background-color: #fd999b;
+  padding: 10px 100px;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 0 0 10px 2px #ccc;
+}
+
+.call_history_box {
+  position: relative;
+  margin-bottom: 25px;
+  box-shadow: 0 0 5px 2px #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  border-bottom: 10px solid #ffea01;
+}
+
+
+.call_history_box .call_history_orderid {
+  font-size: 17px;
+  position: relative;
+  color: #000;
+}
+
+
+
+.call_history_status {
+  color: #28ba51;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.call_history_type span {
+  color: #eb0029;
+}
+
+.call_history_rate,
+.call_history_deducation,
+.call_history_type,
+.call_history_duration,
+.call_history_review,
+.call_history_name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+.call_history_rate span,
+.call_history_duration span,
+.call_history_deducation span,
+.call_history_review span {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.img_history_box {
+  background-color: #ffffe0;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ffea01;
+  margin-top: 5px;
+}
+
+.img_history_box img {
+  width: 50px;
+  border-radius: 100%;
+  height: auto;
+}
+
+.chat_rate_history {
+  text-align: center;
+  font-size: 12px;
+  color: #616161;
+  margin-top: 15px;
+}
+
+.call_history_box button {
+  font-size: 14px;
+  padding: 5px;
+  border-radius: 10px;
+  transition: .3s ease-in-out;
+  width: 100%;
+  margin-bottom: 2px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #8c8c8c;
+  background-color: #fff;
+  border: 1px solid #8c8c8c;
+  margin-top: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+/* e-pooja page start */
+.e_pooja {
+  margin: 20px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.e_pooja_upper_sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.e_pooja_upper_sec h1 {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #333;
+  box-shadow: unset;
+  background-color: #f0df35;
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.e_pooja_search_box {
+  position: relative;
+  width: 33%;
+  display: block;
+}
+
+.e_pooja_search_box input {
+  width: 100%;
+  border-radius: 10px;
+  padding: 8px 15px;
+  border: 1px solid #f0df20;
+  font-size: 16px;
+  box-shadow: 0 0 2px 1px #ddd;
+  outline: none;
+  color: #555;
+}
+
+.e_pooja_search_box .search_btn {
+  position: absolute;
+  top: 50%;
+  right: 0 !important;
+  font-size: 17px;
+  opacity: 1;
+  transform: translatey(-50%);
+  color: #666;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0df20;
+  border-radius: 0 10px 10px 0;
+}
+
+.e_pooja_box {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px 1px #ccc;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  margin: 20px 0px;
+}
+
+.e_pooja_box:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.e_pooja_box_upper {
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.e_pooja_right_img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50%;
+  right: 18px;
+  top: 18px;
+  z-index: 9;
+  border: 1px solid #f0df20;
+  background-color: #ffffe0;
+}
+
+.e_pooja_right_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.e_pooja_cover_img {
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.e_pooja_cover_img img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.e_pooja_deatils {
+  position: absolute;
+  bottom: 0;
+  background-color: #0006;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #fff;
+  padding: 10px 15px;
+}
+
+.e_pooja_product_name {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.e_pooja_product_desc {
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #eee;
+}
+
+.e_pooja_product_desc p {
+  color: #eee;
+  font-size: 13px;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+}
+
+.e_pooja_product_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  font-weight: 600;
+}
+
+.e_pooja_product_price .date_booking {
+  color: #000;
+  font-size: 14px;
+}
+
+
+.product_booking {
+  font-size: 14px;
+  transition: .3s ease-in-out;
+  color: #000;
+}
+
+/* e-pooja page end */
+
+/*shop page start */
+.shop_sec {
+  margin: 30px 0px;
+}
+
+/* .shop_sec_heading {
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 35px;
+  position: relative;
+  margin-bottom: 40px;
+
+}
+
+.shop_sec_heading h1 {
+  font-size: 26px;
+  color: #313131;
+  text-align: center;
+  font-weight: 600;
+}
+
+.shop_sec_heading h2 {
+  color: #616161;
+  margin-bottom: 0;
+  font-size: 21px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.shop_sec_heading img {
+  width: 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -24%;
+} */
+
+
+.shop_upper_box {
+  display: block;
+  background-color: #fff;
+  box-shadow: 0 0 2px 2px #dedede;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.shop_box {
+  width: 100%;
+  min-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  position: relative;
+}
+
+.shop_upper_box:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.shop_box_cover_img {
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.shop_box_cover_img img {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.shop_box_details {
+  position: absolute;
+  bottom: 0;
+  background-color: #0006;
+  width: 100%;
+  left: 0;
+  border-top: 1px solid #fff;
+  padding: 10px 15px;
+}
+
+.shop_box_product_name {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+}
+
+.shop_product_desc {
+  font-size: 12px;
+  text-align: left;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  color: #eee;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.shop_box_sale_tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.shop_box_sale_tag_img {
+  aspect-ratio: 6.3 / 1;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+}
+
+.shop_box_sale_tag_img img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.shop_box_sale_tag_img span {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 10px;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+/*shop page end */
+
+/* astrloger profile start */
+.astrloger_profile {
+  margin: 30px 0px;
+}
+
+.astrloger_profile_heading h2 {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #333;
+  box-shadow: unset;
+  background-color: #f0df35;
+  padding: 10px 40px;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 220px;
+  text-align: center;
+  max-width: 100%;
+}
+
+.border_outline {
+  margin: 30px 0px;
+  border-radius: 10px;
+  border: 1px solid #0003;
+  padding: 0px 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.profile_tag {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ribbon-bg {
+  right: -7px;
+  top: 14px;
+  transform: rotate(-45deg);
+  position: absolute;
+  display: block;
+  width: 82px;
+  padding: 2px 0;
+  font-size: 9px;
+  background-color: #414141;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.ribbon-bg span {
+  background: -webkit-linear-gradient(#f7ef8a, #edc967, #d2ac47);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #0000;
+  text-shadow: 0 0 #edc967;
+}
+
+.astrologer_picture {
+  margin: auto;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #f0df20;
+  box-shadow: #f0df20 0 5px 25px;
+  ;
+}
+
+.astrologer_picture_bg {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+}
+
+.astrologer_picture_bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.border_outline button {
+  background-color: #f0df20;
+  border: none;
+  font-size: 16px;
+  margin: 30px auto 0;
+  display: flex;
+  position: relative;
+  padding: 4px 12px;
+  border-radius: 5px;
+  transition: .3s ease-in-out;
+  /* margin: 20p 0px; */
+}
+
+.name_of_astrologer {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.name_of_astrologer_green_tick {
+  width: 20px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.name_of_astrologer_green_tick img {
+  width: 100%;
+  display: block;
+}
+
+.astrologer_professtion {
+  margin-bottom: 10px;
+  color: #616161;
+}
+
+.astrologer_language {
+  font-size: 15px;
+  color: #616161;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.astrologer_exp {
+  font-size: 15px;
+  color: #616161;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.astrologer_fees {
+  font-weight: 600;
+  color: #4c4c4c;
+}
+
+.astrologer_conversation {
+  margin: 10px 0px;
+  display: flex;
+}
+
+.chat_details {
+  font-size: 16px;
+  margin-right: 40px;
+  color: #616161;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  gap: 5px;
+}
+
+.btns_chat_call button {
+  display: flex;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 4px #ccc;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  padding: 8px 17px;
+  transition: all .3s ease-in-out;
+  min-height: 55px;
+  color: #8c8c8c !important;
+  border: 1px solid #8c8c8c !important;
+}
+
+.start_btn {
+  width: calc(100% - 20px);
+  text-align: center;
+}
+
+.start_btn .strt {
+  color: #8c8c8c;
+  text-align: center;
+  font-weight: 600;
+}
+
+.start_btn .avilable {
+  color: #1aa260;
+  font-size: 15px;
+}
+
+.btns_chat_call i {
+  color: #8c8c8c;
+  font-size: x-large;
+}
+
+.about_me {
+  margin: 0px 20px 0px;
+}
+
+.about_me h4,
+p {
+  text-align: center;
+}
+
+.border_lower_outline {
+  margin: 15px 0px;
+  border-radius: 10px;
+  border: 1px solid #0003;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.border_lower_outline h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: 600;
+  text-align: left;
+}
+
+.border_lower_outline h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #000;
+  line-height: 1;
+}
+
+.border_lower_outline_rating {
+  align-items: center;
+  text-align: center;
+}
+
+.total_view {
+  text-align: center;
+  color: #000;
+}
+
+.total_view span {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.ratting_review {}
+
+.status_bar_ratting {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.status_bar_ratting span {
+  color: #1a262b;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.progress {
+  width: 100%;
+}
+
+.progress .width_custom {
+  background-color: #eee !important;
+  width: 80%;
+}
+
+.progress .progress-bar {
+  /* margin: 10px 0px; */
+  background-color: #3ed33e;
+}
+
+.check_similier_cons {
+  border: 1px solid #0003;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0px;
+}
+
+.check_similier_cons h2 {
+  font-size: 20px;
+  margin-bottom: 0;
+  color: #454545;
+  font-weight: 600;
+  text-align: center;
+}
+
+.header_similar_consultants {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.similar_consultants_box {
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px #ccc;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.similar_consultants_img {
+  width: 90px;
+  min-height: 90px;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.similar_consultants_name {
+  overflow: hidden;
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 0 15px;
+  height: 23px;
+  color: #454545;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.similar_consultants_price {
+  font-size: 12px;
+  color: #616161;
+}
+
+.user_reivew_border {
+
+  border: 1px solid #0003;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.user_reivew_inside {
+  max-height: 600px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.user_reivew_inside::-webkit-scrollbar {
+  width: 10px;
+  background: #f1f1f1;
+  color: red;
+  border-radius: 10px;
+}
+
+.user_reivew_inside h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #454545;
+  font-weight: 600;
+  text-align: left;
+}
+
+.user_reivew_filter {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.user_reivew_filter h6 {
+  align-self: center;
+}
+
+.sortRight {
+  gap: 30px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review_curser {
+  margin-left: 10px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+
+}
+
+.review_curser input[type=radio] {
+  position: relative;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.review_curser label {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+.review_box {
+  background-color: #fff;
+  min-height: 70px;
+  padding: 15px;
+  box-shadow: 0 0 2px 2px #ccc;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: block;
+}
+
+.profile_img_name {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.profile_img_name img {
+  color: #555;
+  font-weight: 600;
+  font-size: 16px;
+  background: #f0df20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  min-width: 35px;
+  margin-right: 10px;
+}
+
+.profile_img_name span {
+  color: #000;
+  font-weight: 600;
+}
+
+.profile_img_rating {
+  display: block !important;
+  float: left;
+}
+
+.review_box p {
+  font-size: 16px;
+  text-align: left;
+  color: #666;
+  margin-bottom: 10px;
+  overflow-wrap: normal;
+  word-break: break-word;
+}
+
+
+/* calling form */
+.calling_form {
+  margin: 30px 0px;
+}
+
+.calling_form_box_heading {
+  text-align: center;
+}
+
+.calling_form_box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  width: 100%;
+  height: auto;
+  padding: 30px 50px;
+  border-radius: 8px;
+}
+
+.calling_form_box label span {
+  color: red;
+}
+
+.calling_form_box label {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.calling_form_box button {
+  color: #fff;
+  margin: 10px auto 0;
+  display: block;
+  background-color: orange;
+  border-radius: 8px;
+  padding: 5px 20px;
+  border: none;
+
+}
+
+/* profile_sec start */
+.profile_sec{
+  margin: 30px 0px;
+}
+.profile_sec_box{
+  border-radius: 10px;
+  border: 2px solid orange;
+  box-shadow: #0000004d 0 19px 38px, #00000038 0 15px 12px;
+  padding: 2rem;
+}
+.profile_img{
+  position: relative;
+  max-width: 205px;
+  margin: 10px auto;
+}
+.profile_img_edit{
+  position: absolute;
+  right: 19px;
+  z-index: 1;
+  top: 13px;
+}
+.profile_img img{
+  border-radius: 100%;
+  border: 4px solid orange;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
